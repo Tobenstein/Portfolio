@@ -428,6 +428,15 @@ function ProductsSection() {
 }
 
 function ProductDetail({ productId, onBack }: { productId: string; onBack: () => void }) {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    const mainElement = document.querySelector('main');
+    if (mainElement) {
+      mainElement.scrollTop = 0;
+      mainElement.scrollTo({ top: 0, behavior: 'instant' });
+    }
+  }, []);
+
   // Product detail content based on ID
   const getProductContent = () => {
     switch (productId) {
