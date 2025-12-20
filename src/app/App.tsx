@@ -264,7 +264,8 @@ function ProductsSection() {
     // Find the main scrollable container and force scroll to top
     const mainElement = document.querySelector('main');
     if (mainElement) {
-      // Use scrollTo with 'instant' behavior for immediate reset
+      // Use both methods to ensure it works
+      mainElement.scrollTop = 0;
       mainElement.scrollTo({ top: 0, behavior: 'instant' });
     }
   }, [selectedProduct]);
