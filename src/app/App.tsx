@@ -261,13 +261,13 @@ function ProductsSection() {
 
   // Scroll to top when navigating between list and detail views
   useEffect(() => {
-    // Find the main scrollable container and force scroll to top
-    const mainElement = document.querySelector('main');
-    if (mainElement) {
-      // Use both methods to ensure it works
-      mainElement.scrollTop = 0;
-      mainElement.scrollTo({ top: 0, behavior: 'instant' });
-    }
+    // Use requestAnimationFrame to ensure scroll happens after render
+    requestAnimationFrame(() => {
+      const mainElement = document.querySelector('main');
+      if (mainElement) {
+        mainElement.scrollTop = 0;
+      }
+    });
   }, [selectedProduct]);
 
   const products = [
@@ -430,11 +430,13 @@ function ProductsSection() {
 function ProductDetail({ productId, onBack }: { productId: string; onBack: () => void }) {
   // Scroll to top when component mounts
   useEffect(() => {
-    const mainElement = document.querySelector('main');
-    if (mainElement) {
-      mainElement.scrollTop = 0;
-      mainElement.scrollTo({ top: 0, behavior: 'instant' });
-    }
+    // Use requestAnimationFrame to ensure scroll happens after render
+    requestAnimationFrame(() => {
+      const mainElement = document.querySelector('main');
+      if (mainElement) {
+        mainElement.scrollTop = 0;
+      }
+    });
   }, []);
 
   // Product detail content based on ID
