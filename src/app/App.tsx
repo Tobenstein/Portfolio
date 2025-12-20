@@ -5,7 +5,7 @@ import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 // IMPORTANT: Replace these placeholder URLs with your actual images
 // Upload your images to the /public folder in GitHub, then update these paths:
 // Example: const profilePhoto = "/profile.jpg";
-const profilePhoto = "/profile.jpg"; // or .png
+const profilePhoto = "/public/profile.jpg"; // or .png
 const fuzzyDashboard = "/mycare-dashboard-fuzzy.png";
 const mobileDashboard = "/mycare-dashboard-mobile.png";
 const moonGardenDesktop = "/moongarden-desktop.png";
