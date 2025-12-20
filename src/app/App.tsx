@@ -110,9 +110,12 @@ export default function App() {
           <div className="mt-8 lg:mt-16 pt-4 lg:pt-8 border-t border-primary/20 hidden md:block">
             <Clapperboard className="w-5 h-5 text-primary mb-3 opacity-70" />
             <p className="text-xs text-muted-foreground italic">
-              "Cinema is a matter of what's in the frame and what's out."
+              "The television screen is the retina of the mind's eye. 
+              Therefore the television screen is part of the physical structure of the brain. 
+              Therefore whatever appears on the television screen emerges as raw experience for those who watch it. 
+              Therefore television is reality, and reality is less than television.."
             </p>
-            <p className="text-xs text-primary mt-1">— Martin Scorsese</p>
+            <p className="text-xs text-primary mt-1">— Prof. Brian O'Blivion</p>
           </div>
         </div>
 
