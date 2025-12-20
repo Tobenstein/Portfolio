@@ -5,13 +5,13 @@ import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 // IMPORTANT: Replace these placeholder URLs with your actual images
 // Upload your images to the /public folder in GitHub, then update these paths:
 // Example: const profilePhoto = "/profile.jpg";
-const profilePhoto = "https://placehold.co/400x400/1a1a1a/d4af37?text=Profile+Photo";
-const fuzzyDashboard = "https://placehold.co/1200x800/1a1a1a/d4af37?text=MyCare+Dashboard";
-const mobileDashboard = "https://placehold.co/400x800/1a1a1a/d4af37?text=MyCare+Mobile";
-const moonGardenDesktop = "https://placehold.co/1200x800/1a1a1a/d4af37?text=Moon+Garden+Desktop";
-const moonGardenMobile = "https://placehold.co/400x800/1a1a1a/d4af37?text=Moon+Garden+Mobile";
-const hilareadsDesktop = "https://placehold.co/1200x800/1a1a1a/d4af37?text=Hilareads+Desktop";
-const hilareadsMobile = "https://placehold.co/400x800/1a1a1a/d4af37?text=Hilareads+Mobile";
+const profilePhoto = "/profile.jpg"; // or .png
+const fuzzyDashboard = "/mycare-dashboard-fuzzy.png";
+const mobileDashboard = "/mycare-dashboard-mobile.png";
+const moonGardenDesktop = "/moongarden-desktop.png";
+const moonGardenMobile = "/moongarden-mobile.png";
+const hilareadsDesktop = "/hilareads-desktop.png";
+const hilareadsMobile = "/hilareads-mobile.png";
 
 type Section = "products" | "research" | "cv" | "about";
 
