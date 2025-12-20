@@ -24,6 +24,11 @@ export default function App() {
     }
   }, [activeSection]);
 
+  // Set page title
+  useEffect(() => {
+    document.title = "Rob Perry, UX Director";
+  }, []);
+
   return (
     <div className="size-full flex flex-col md:flex-row bg-background text-foreground film-grain vignette">
       {/* Sidebar - Left 1/4 on desktop, top 1/4 on mobile */}
@@ -110,10 +115,7 @@ export default function App() {
           <div className="mt-8 lg:mt-16 pt-4 lg:pt-8 border-t border-primary/20 hidden md:block">
             <Clapperboard className="w-5 h-5 text-primary mb-3 opacity-70" />
             <p className="text-xs text-muted-foreground italic">
-              "The television screen is the retina of the mind's eye. 
-              Therefore the television screen is part of the physical structure of the brain. 
-              Therefore whatever appears on the television screen emerges as raw experience for those who watch it. 
-              Therefore television is reality, and reality is less than television.."
+              "The television screen is the retina of the mind's eye. Therefore the television screen is part of the physical structure of the brain. Therefore whatever appears on the television screen emerges as raw experience for those who watch it. Therefore television is reality, and reality is less than television."
             </p>
             <p className="text-xs text-primary mt-1">— Prof. Brian O'Blivion</p>
           </div>
@@ -1028,8 +1030,11 @@ function CVSection() {
           <h2 className="text-4xl">Curriculum Vitae</h2>
           <button
             onClick={() => {
-              // PDF download functionality to be added
-              console.log("Download CV PDF");
+              // Download CV PDF from /public folder
+              const link = document.createElement('a');
+              link.href = '/rob-perry-cv.pdf';
+              link.download = 'Rob-Perry-CV.pdf';
+              link.click();
             }}
             className="flex items-center gap-2 px-4 py-2 border border-primary/30 rounded-lg bg-card hover:bg-primary/10 hover:border-primary transition-all text-sm"
           >
