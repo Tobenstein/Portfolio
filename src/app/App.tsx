@@ -4,13 +4,13 @@ import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 
 // Placeholder URLs - replace these with your actual image URLs after deployment
 // You can upload your images to GitHub repo in /public/images/ folder and reference them
-const fuzzyDashboard = "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80";
-const mobileDashboard = "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80";
-const moonGardenDesktop = "https://images.unsplash.com/photo-1528319725582-ddc096101511?w=1200&q=80";
-const moonGardenMobile = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80";
-const hilareadsDesktop = "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1200&q=80";
-const hilareadsMobile = "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&q=80";
-const profilePhoto = "https://images.unsplash.com/photo-1576558656222-ba66febe3dec?w=400&q=80";
+const fuzzyDashboard = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Fuzzy%20dashboard.webp";
+const mobileDashboard = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Dashboard%20(mobile%2C%20Georgie).png";
+const moonGardenDesktop = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Moon%20Garden%20desktop.png";
+const moonGardenMobile = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Moon%20Garden%20mobile.png";
+const hilareadsDesktop = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Hilareads%20desktop.png";
+const hilareadsMobile = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Hilareads%20Mobile.png";
+const profilePhoto = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Rob%20Perry's%20Headshot.jpg";
 
 type Section = "products" | "research" | "cv" | "about";
 
