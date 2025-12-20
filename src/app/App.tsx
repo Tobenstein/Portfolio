@@ -1,13 +1,16 @@
 import { useState, useEffect, useRef } from "react";
 import { Film, FileText, User, Clapperboard, BookOpen, ChevronDown, Download, ArrowLeft, Mail, Phone, MapPin, Linkedin, MonitorSmartphone } from "lucide-react";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
-import fuzzyDashboard from "figma:asset/80492f285bfbac88c3c04f151abf44ca042d42f9.png";
-import mobileDashboard from "figma:asset/146c3a240968546644828643126e8b3de6fdae1a.png";
-import moonGardenDesktop from "figma:asset/53a9f346a0a6550690b61a6acf53d0e2f81d6b13.png";
-import moonGardenMobile from "figma:asset/4b3f0a5a8ce496bc61fb8a55ef78135f07cf4b31.png";
-import hilareadsDesktop from "figma:asset/1ddceead1c9943f1a67a4f71a01088ced23f9e8c.png";
-import hilareadsMobile from "figma:asset/a19dd0a151829497a95ed2781f79985b2763157f.png";
-import profilePhoto from "figma:asset/4914783a5613ef3c7282198dbaf81c8d8f047a01.png";
+
+// Placeholder URLs - replace these with your actual image URLs after deployment
+// You can upload your images to GitHub repo in /public/images/ folder and reference them
+const fuzzyDashboard = "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80";
+const mobileDashboard = "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80";
+const moonGardenDesktop = "https://images.unsplash.com/photo-1528319725582-ddc096101511?w=1200&q=80";
+const moonGardenMobile = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80";
+const hilareadsDesktop = "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1200&q=80";
+const hilareadsMobile = "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&q=80";
+const profilePhoto = "https://images.unsplash.com/photo-1576558656222-ba66febe3dec?w=400&q=80";
 
 type Section = "products" | "research" | "cv" | "about";
 
