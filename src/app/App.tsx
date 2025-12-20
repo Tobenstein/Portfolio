@@ -256,10 +256,11 @@ function ProductsSection() {
 
   // Scroll to top when navigating between list and detail views
   useEffect(() => {
-    // Find the main scrollable container
+    // Find the main scrollable container and force scroll to top
     const mainElement = document.querySelector('main');
     if (mainElement) {
-      mainElement.scrollTop = 0;
+      // Use scrollTo with 'instant' behavior for immediate reset
+      mainElement.scrollTo({ top: 0, behavior: 'instant' });
     }
   }, [selectedProduct]);
 
