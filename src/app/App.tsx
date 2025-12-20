@@ -2,11 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import { Film, FileText, User, Clapperboard, BookOpen, ChevronDown, Download, ArrowLeft, Mail, Phone, MapPin, Linkedin, MonitorSmartphone } from "lucide-react";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 
-// IMPORTANT: Replace these placeholder URLs with your actual images
-// Upload your images to the /public folder in GitHub, then update these paths:
-// Example: const profilePhoto = "/profile.jpg";
-const profilePhoto = "/profile.jpg"; // or .png
-const fuzzyDashboard = "/mycare-dashboard-fuzzy.webp";
+// Image paths - files are stored in /public folder
+const profilePhoto = "/profile.jpg";
+const fuzzyDashboard = "/mycare-dashboard-fuzzy.png";
 const mobileDashboard = "/mycare-dashboard-mobile.png";
 const moonGardenDesktop = "/moongarden-desktop.png";
 const moonGardenMobile = "/moongarden-mobile.png";
