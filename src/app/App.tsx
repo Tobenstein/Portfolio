@@ -430,13 +430,28 @@ function ProductsSection() {
 function ProductDetail({ productId, onBack }: { productId: string; onBack: () => void }) {
   // Scroll to top when component mounts
   useEffect(() => {
-    // Use requestAnimationFrame to ensure scroll happens after render
-    requestAnimationFrame(() => {
-      const mainElement = document.querySelector('main');
-      if (mainElement) {
+    // Try multiple methods to ensure scroll works
+    const mainElement = document.querySelector('main');
+    if (mainElement) {
+      // Immediate scroll
+      mainElement.scrollTop = 0;
+      mainElement.scrollTo(0, 0);
+      
+      // Also try after a brief delay
+      setTimeout(() => {
         mainElement.scrollTop = 0;
-      }
-    });
+        mainElement.scrollTo(0, 0);
+      }, 0);
+      
+      // And with requestAnimationFrame
+      requestAnimationFrame(() => {
+        mainElement.scrollTop = 0;
+        mainElement.scrollTo(0, 0);
+      });
+    }
+    
+    // Also try window scroll as backup
+    window.scrollTo(0, 0);
   }, []);
 
   // Product detail content based on ID
