@@ -2,15 +2,16 @@ import { useState, useEffect, useRef } from "react";
 import { Film, FileText, User, Clapperboard, BookOpen, ChevronDown, Download, ArrowLeft, Mail, Phone, MapPin, Linkedin, MonitorSmartphone } from "lucide-react";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 
-// Placeholder URLs - replace these with your actual image URLs after deployment
-// You can upload your images to GitHub repo in /public/images/ folder and reference them
-const fuzzyDashboard = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Fuzzy%20dashboard.webp";
-const mobileDashboard = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Dashboard%20(mobile%2C%20Georgie).png";
-const moonGardenDesktop = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Moon%20Garden%20desktop.png";
-const moonGardenMobile = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Moon%20Garden%20mobile.png";
-const hilareadsDesktop = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Hilareads%20desktop.png";
-const hilareadsMobile = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Hilareads%20Mobile.png";
-const profilePhoto = "https://github.com/Tobenstein/Portfolio/blob/main/public/images/Rob%20Perry's%20Headshot.jpg";
+// IMPORTANT: Replace these placeholder URLs with your actual images
+// Upload your images to the /public folder in GitHub, then update these paths:
+// Example: const profilePhoto = "/profile.jpg";
+const profilePhoto = "https://placehold.co/400x400/1a1a1a/d4af37?text=Profile+Photo";
+const fuzzyDashboard = "https://placehold.co/1200x800/1a1a1a/d4af37?text=MyCare+Dashboard";
+const mobileDashboard = "https://placehold.co/400x800/1a1a1a/d4af37?text=MyCare+Mobile";
+const moonGardenDesktop = "https://placehold.co/1200x800/1a1a1a/d4af37?text=Moon+Garden+Desktop";
+const moonGardenMobile = "https://placehold.co/400x800/1a1a1a/d4af37?text=Moon+Garden+Mobile";
+const hilareadsDesktop = "https://placehold.co/1200x800/1a1a1a/d4af37?text=Hilareads+Desktop";
+const hilareadsMobile = "https://placehold.co/400x800/1a1a1a/d4af37?text=Hilareads+Mobile";
 
 type Section = "products" | "research" | "cv" | "about";
 
