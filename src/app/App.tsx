@@ -1008,35 +1008,35 @@ function CVSection() {
       company: "Threshold Training Association",
       location: "Prague, CZ",
       period: "2023 - 2025",
-      description: "Developed client-centred training programs for skills-based development in business, energy, banking, and more. Worked with stakeholders to plan, develop, and conduct research projects (typically UX, but also experimental learning methods)."
+      description: "Developed user-centred learning programs for skills-based development in business, energy, banking, and more. Used agile methodology to design learning programs for cross-functional collaboration."
     },
     {
       title: "Education & Learning Designer, S.E.T.A",
       company: "Dalhousie University, Dept. of Medicine",
       location: "Halifax, Canada",
       period: "2018 - 2024",
-      description: "Developed and delivered trauma workshops for nurses, general practitioners, medical students. Engaged with stakeholders & synthesised research data to update/improve deliverables. Provided consultations for modernising curricula and UX."
-    },
-    {
-      title: "Lead UX, Education & Learning Designer (Medtech)",
-      company: "Tobenstein Technologies",
-      location: "East Asia / Canada",
-      period: "2018 - 2024",
-      description: "Developed medical learning & development software and learning strategies for 80+ international clients. Developed proprietary UI for L&D programs. Synthesised research and streamlined delivery based on stakeholder feedback."
+      description: "Developed information architecture for medical programs. Coordinated and conducted user-centred research projects with medical professionals in various specialisations. Provided consultations for modernising curricula and UX."
     },
     {
       title: "Lead UX & Learning Designer, International Education",
       company: "Immigration Services Association of Nova Scotia",
       location: "Canada",
       period: "2022 - 2023",
-      description: "Designed and developed eLearning programs/software designed to help integrate newcomers into the Canadian job market. Synthesised research data to improve and streamline content for digital delivery via proprietary UX/I."
+      description: "Developed a Canada-wide research project aimed at facilitating migrant integration. Designed and developed eLearning programs/software designed to help integrate newcomers into the Canadian job market."
+    },
+    {
+      title: "Lead UX, Education & Learning Designer (Medtech)",
+      company: "Tobenstein Technologies",
+      location: "East Asia / Canada",
+      period: "2018 - 2024",
+      description: "Developed and conducted user research projects, user profiles, etfc. Designed wireframes which were developed into working prototypes. Designed user-centered interfaces for prototypes. Provided consultations and product reviews to address user pain points. "
     },
     {
       title: "Junior UX Designer, Education & Learning",
       company: "KNOX Academy",
       location: "South Korea",
       period: "2017 - 2018",
-      description: "Designed proprietary eLearning software for ESL students. Developed and conducted user research projects for eLearning apps."
+      description: "Developed information archetecture for proprietary eLearning software. Focused on interaction design, user interface, and responsive design."
     },
     {
       title: "First Responder & Team Supervisor",
