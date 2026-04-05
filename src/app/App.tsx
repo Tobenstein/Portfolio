@@ -758,7 +758,7 @@ function LivePrototypeSection({ productId }: { productId: string }) {
           {activeView === "desktop" ? (
             <div className="w-full overflow-hidden" style={{ height: "560px" }}>
               <iframe
-                src="https://hilareads.vercel.app"
+                src="https://hilareads.com"
                 className="origin-top-left"
                 title="Hilareads Desktop Prototype"
                 style={{ 
@@ -774,7 +774,7 @@ function LivePrototypeSection({ productId }: { productId: string }) {
             <div className="flex justify-center items-center p-8 bg-secondary" style={{ minHeight: "600px" }}>
               <div className="relative" style={{ width: "375px", height: "667px" }}>
                 <iframe
-                  src="https://hilareads.vercel.app"
+                  src="https://hilareads.com"
                   className="w-full h-full rounded-lg shadow-2xl"
                   title="Hilareads Mobile Prototype"
                   style={{ border: "1px solid rgba(207, 163, 88, 0.3)" }}
