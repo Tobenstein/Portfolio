@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Film, FileText, User, Clapperboard, BookOpen, ChevronDown, Download, ArrowLeft, Mail, Phone, MapPin, Linkedin, MonitorSmartphone } from "lucide-react";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
+import { ContactForm } from "./components/ContactForm";
 
 // Image paths - files are stored in /public folder
 const profilePhoto = "/profile.jpg";
@@ -11,7 +12,7 @@ const moonGardenMobile = "/moongarden-mobile.png";
 const hilareadsDesktop = "/hilareads-desktop.png";
 const hilareadsMobile = "/hilareads-mobile.png";
 
-type Section = "products" | "research" | "cv" | "about";
+type Section = "products" | "research" | "cv" | "about" | "contact";
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<Section>("about");
@@ -109,10 +110,22 @@ export default function App() {
               <FileText className="w-4 h-4 lg:w-5 lg:h-5 flex-shrink-0" />
               <span className="truncate lg:inline">Curriculum Vitae</span>
             </button>
+
+            <button
+              onClick={() => setActiveSection("contact")}
+              className={`w-full text-left px-3 lg:px-4 py-2 lg:py-3 rounded-lg transition-all flex items-center gap-2 lg:gap-3 text-sm lg:text-base ${
+                activeSection === "contact"
+                  ? "bg-primary text-primary-foreground golden-glow"
+                  : "text-foreground hover:bg-primary/10"
+              }`}
+            >
+              <Mail className="w-4 h-4 lg:w-5 lg:h-5 flex-shrink-0" />
+              <span className="truncate lg:inline">Contact</span>
+            </button>
           </nav>
 
           {/* Cinephile quote */}
-          <div className="mt-8 lg:mt-16 pt-4 lg:pt-8 border-t border-primary/20 hidden md:block">
+          <div className="mt-6 lg:mt-8 pt-4 lg:pt-6 border-t border-primary/20 hidden md:block">
             <Clapperboard className="w-5 h-5 text-primary mb-3 opacity-70" />
             <p className="text-xs text-muted-foreground italic">
               "The television screen is the retina of the mind's eye. Therefore the television screen is part of the physical structure of the brain. Therefore whatever appears on the television screen emerges as raw experience for those who watch it. Therefore television is reality, and reality is less than television."
@@ -137,6 +150,7 @@ export default function App() {
             {activeSection === "products" && <ProductsSection />}
             {activeSection === "research" && <ResearchSection />}
             {activeSection === "cv" && <CVSection />}
+            {activeSection === "contact" && <ContactSection />}
           </div>
         </div>
       </main>
@@ -1008,35 +1022,35 @@ function CVSection() {
       company: "Threshold Training Association",
       location: "Prague, CZ",
       period: "2023 - 2025",
-      description: "Developed user-centred learning programs for skills-based development in business, energy, banking, and more. Used agile methodology to design learning programs for cross-functional collaboration."
+      description: "Developed client-centred training programs for skills-based development in business, energy, banking, and more. Worked with stakeholders to plan, develop, and conduct research projects (typically UX, but also experimental learning methods)."
     },
     {
       title: "Education & Learning Designer, S.E.T.A",
       company: "Dalhousie University, Dept. of Medicine",
       location: "Halifax, Canada",
       period: "2018 - 2024",
-      description: "Developed information architecture for medical programs. Coordinated and conducted user-centred research projects with medical professionals in various specialisations. Provided consultations for modernising curricula and UX."
-    },
-    {
-      title: "Lead UX & Learning Designer, International Education",
-      company: "Immigration Services Association of Nova Scotia",
-      location: "Canada",
-      period: "2022 - 2023",
-      description: "Developed a Canada-wide research project aimed at facilitating migrant integration. Designed and developed eLearning programs/software designed to help integrate newcomers into the Canadian job market."
+      description: "Developed and delivered trauma workshops for nurses, general practitioners, medical students. Engaged with stakeholders & synthesised research data to update/improve deliverables. Provided consultations for modernising curricula and UX."
     },
     {
       title: "Lead UX, Education & Learning Designer (Medtech)",
       company: "Tobenstein Technologies",
       location: "East Asia / Canada",
       period: "2018 - 2024",
-      description: "Developed and conducted user research projects, user profiles, etfc. Designed wireframes which were developed into working prototypes. Designed user-centered interfaces for prototypes. Provided consultations and product reviews to address user pain points. "
+      description: "Developed medical learning & development software and learning strategies for 80+ international clients. Developed proprietary UI for L&D programs. Synthesised research and streamlined delivery based on stakeholder feedback."
+    },
+    {
+      title: "Lead UX & Learning Designer, International Education",
+      company: "Immigration Services Association of Nova Scotia",
+      location: "Canada",
+      period: "2022 - 2023",
+      description: "Designed and developed eLearning programs/software designed to help integrate newcomers into the Canadian job market. Synthesised research data to improve and streamline content for digital delivery via proprietary UX/I."
     },
     {
       title: "Junior UX Designer, Education & Learning",
       company: "KNOX Academy",
       location: "South Korea",
       period: "2017 - 2018",
-      description: "Developed information archetecture for proprietary eLearning software. Focused on interaction design, user interface, and responsive design."
+      description: "Designed proprietary eLearning software for ESL students. Developed and conducted user research projects for eLearning apps."
     },
     {
       title: "First Responder & Team Supervisor",
@@ -1272,6 +1286,135 @@ function CVSection() {
             <div className="border border-primary/20 rounded-lg px-4 py-2 bg-card">
               <p className="text-sm">German/Yiddish <span className="text-xs text-muted-foreground">(A1)</span></p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ContactSection() {
+  return (
+    <div className="max-w-4xl">
+      <div className="mb-8">
+        <div className="inline-block px-3 py-1 bg-primary/20 text-primary text-sm mb-4 rounded">
+          EPILOGUE
+        </div>
+        <h2 className="text-4xl mb-4">Contact</h2>
+        <div className="h-1 w-24 bg-primary rounded-full" />
+      </div>
+
+      <p className="text-muted-foreground mb-8">
+        Ready to collaborate on your next project? Drop me a message and let's create something remarkable together.
+      </p>
+
+      <div className="grid md:grid-cols-2 gap-8 mb-12">
+        {/* Contact Information - Film Frame */}
+        <div className="relative border-2 border-primary/30 rounded-sm p-6 bg-card/50">
+          {/* Top frame line */}
+          <div className="absolute top-0 left-3 right-3 h-6 bg-primary/5 border-b border-primary/20 flex items-center justify-center">
+            <div className="text-xs text-primary/50 tracking-widest" style={{ fontFamily: 'monospace' }}>
+              [FRAME 01]
+            </div>
+          </div>
+
+          {/* Bottom frame line */}
+          <div className="absolute bottom-0 left-3 right-3 h-6 bg-primary/5 border-t border-primary/20" />
+
+          {/* Film sprocket holes - left side */}
+          <div className="absolute left-0 top-0 bottom-0 w-3 flex flex-col justify-around py-4 bg-primary/5 border-r border-primary/20">
+            {[...Array(8)].map((_, i) => (
+              <div key={i} className="w-2 h-2 bg-primary/20 rounded-sm mx-auto" />
+            ))}
+          </div>
+
+          {/* Film sprocket holes - right side */}
+          <div className="absolute right-0 top-0 bottom-0 w-3 flex flex-col justify-around py-4 bg-primary/5 border-l border-primary/20">
+            {[...Array(8)].map((_, i) => (
+              <div key={i} className="w-2 h-2 bg-primary/20 rounded-sm mx-auto" />
+            ))}
+          </div>
+
+          <div className="px-4 pt-6">
+            <h3 className="text-xl mb-6 text-primary">Get In Touch</h3>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-xs text-muted-foreground mb-1">Email</p>
+                  <a href="mailto:Robperryinc@protonmail.com" className="text-sm hover:text-primary transition-colors">
+                    Robperryinc@protonmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-xs text-muted-foreground mb-1">Phone</p>
+                  <a href="tel:+420734886938" className="text-sm hover:text-primary transition-colors">
+                    (420) 734 886 938
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-xs text-muted-foreground mb-1">Location</p>
+                  <p className="text-sm">Prague, Czech Republic</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Linkedin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-xs text-muted-foreground mb-1">LinkedIn</p>
+                  <a href="https://linkedin.com/in/robperryinc" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-primary transition-colors">
+                    linkedin.com/in/robperryinc
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 pt-6 mb-4 border-t border-primary/20">
+              <p className="text-xs text-muted-foreground italic">
+                "I think this is the beginning of a beautiful friendship."
+              </p>
+              <p className="text-xs text-primary mt-1">— Rick Blaine, Casablanca (1942)</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Contact Form - Film Frame */}
+        <div className="relative border-2 border-primary/30 rounded-sm p-6 bg-card/50">
+          {/* Top frame line */}
+          <div className="absolute top-0 left-3 right-3 h-6 bg-primary/5 border-b border-primary/20 flex items-center justify-center">
+            <div className="text-xs text-primary/50 tracking-widest" style={{ fontFamily: 'monospace' }}>
+              [FRAME 02]
+            </div>
+          </div>
+
+          {/* Bottom frame line */}
+          <div className="absolute bottom-0 left-3 right-3 h-6 bg-primary/5 border-t border-primary/20" />
+
+          {/* Film sprocket holes - left side */}
+          <div className="absolute left-0 top-0 bottom-0 w-3 flex flex-col justify-around py-4 bg-primary/5 border-r border-primary/20">
+            {[...Array(8)].map((_, i) => (
+              <div key={i} className="w-2 h-2 bg-primary/20 rounded-sm mx-auto" />
+            ))}
+          </div>
+
+          {/* Film sprocket holes - right side */}
+          <div className="absolute right-0 top-0 bottom-0 w-3 flex flex-col justify-around py-4 bg-primary/5 border-l border-primary/20">
+            {[...Array(8)].map((_, i) => (
+              <div key={i} className="w-2 h-2 bg-primary/20 rounded-sm mx-auto" />
+            ))}
+          </div>
+
+          <div className="px-4 pt-6">
+            <h3 className="text-xl mb-6 text-primary">Send a Message</h3>
+            <ContactForm />
           </div>
         </div>
       </div>
