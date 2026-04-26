@@ -52,7 +52,7 @@ export default function App() {
                 </div>
               </div>
               <div>
-                <h1 className="text-primary tracking-wide text-xl lg:text-3xl" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, letterSpacing: '0.02em' }}>Rob Perry</h1>
+                <h1 className="text-primary tracking-wide text-3xl lg:text-5xl" style={{ fontFamily: "'Film', sans-serif", letterSpacing: '0.02em' }}>Rob Perry</h1>
                 <p className="text-xs lg:text-sm text-muted-foreground ml-2">UX Director</p>
               </div>
             </div>
@@ -171,7 +171,7 @@ function AboutSection() {
           <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-8">
             {/* Profile Photo */}
             <div className="flex-shrink-0">
-              <div className="w-24 h-24 md:w-32 md:h-32 rounded overflow-hidden border-4 border-primary/40">
+              <div className="w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded overflow-hidden border-4 border-primary/40">
                 <img
                   src={profilePhoto}
                   alt="Rob Perry"
@@ -183,10 +183,10 @@ function AboutSection() {
             {/* Contact Info - Title Card Style */}
             <div className="flex-1 min-w-0 w-full">
               <div className="mb-4 lg:mb-6 text-center md:text-left">
-                <h3 className="text-2xl lg:text-3xl tracking-tight mb-1" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, letterSpacing: '0.05em' }}>
+                <h3 className="text-primary text-6xl lg:text-8xl tracking-tight mb-1" style={{ fontFamily: "'Broadway', sans-serif", letterSpacing: '0.05em' }}>
                   ROB PERRY
                 </h3>
-                <p className="text-xs lg:text-sm text-primary uppercase tracking-widest" style={{ letterSpacing: '0.15em' }}>
+                <p className="text-xs lg:text-sm text-foreground uppercase tracking-widest" style={{ letterSpacing: '0.15em' }}>
                   UX Director • Learning & Development
                 </p>
               </div>
@@ -236,9 +236,13 @@ function AboutSection() {
         <p className="leading-relaxed text-muted-foreground">
           With a background as a first responder in the largest medical complex in Eastern Canada and a wealth of experience in development & design, I approach each challenge with the mindset of a director: understanding the vision, collaborating with talented teams, and carefully crafting experiences that resonate with audiences. My work spans from medtech and trauma workshops to mobile games, always with a focus on the human story at the center.
         </p>
-        
+
         <p className="text-lg leading-relaxed">
-          My portfolio is designed for you to quickly and easily parse my experience in research projects and experiment with interactive prototypes. Click on Research Projects to get started.
+          Much like classics of world cinema, my portfolio emphasises substance over style, quality of content over flash and flair, and depth of meaning over bells and whistles. I could show you fancy buttons and lots of eye candy, but I have chosen instead to use this as a platform to discuss the skills and experience that will increase the value of your users' experience. My portfolio is designed for you to quickly and easily parse my experience in research projects and experiment with interactive prototypes.
+        </p>
+
+        <p className="text-lg leading-relaxed">
+          Click on Research Projects to get started.
         </p>
         
         <div className="grid grid-cols-2 gap-6 mt-8 pt-8 border-t border-primary/20">

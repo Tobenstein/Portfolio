@@ -1,1 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Film';
+  src: url('https://raw.githubusercontent.com/Tobenstein/publicfonts/main/film.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Broadway';
+  src: url('https://raw.githubusercontent.com/Tobenstein/publicfonts/main/broadway.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
