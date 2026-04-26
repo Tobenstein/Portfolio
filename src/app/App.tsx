@@ -52,7 +52,7 @@ export default function App() {
                 </div>
               </div>
               <div>
-                <h1 className="text-primary tracking-wide text-3xl lg:text-5xl" style={{ fontFamily: "'Film', sans-serif", letterSpacing: '0.02em' }}>Rob Perry</h1>
+                <h1 className="text-primary tracking-wide text-3xl lg:text-5xl" style={{ fontFamily: "'Acheader', sans-serif", letterSpacing: '0.02em' }}>Rob Perry</h1>
                 <p className="text-xs lg:text-sm text-muted-foreground ml-2">UX Director</p>
               </div>
             </div>
@@ -183,7 +183,7 @@ function AboutSection() {
             {/* Contact Info - Title Card Style */}
             <div className="flex-1 min-w-0 w-full">
               <div className="mb-4 lg:mb-6 text-center md:text-left">
-                <h3 className="text-primary text-6xl lg:text-8xl tracking-tight mb-1" style={{ fontFamily: "'Broadway', sans-serif", letterSpacing: '0.05em' }}>
+                <h3 className="text-primary text-6xl lg:text-8xl tracking-tight mb-1" style={{ fontFamily: "'Film', sans-serif", letterSpacing: '0.05em' }}>
                   ROB PERRY
                 </h3>
                 <p className="text-xs lg:text-sm text-foreground uppercase tracking-widest" style={{ letterSpacing: '0.15em' }}>

@@ -15,3 +15,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Acheader';
+  src: url('https://raw.githubusercontent.com/Tobenstein/publicfonts/main/acheader.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
