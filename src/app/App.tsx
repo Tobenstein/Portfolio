@@ -45,14 +45,14 @@ export default function App() {
           {/* Header */}
           <div className="mb-6 lg:mb-12">
             <div className="flex items-center gap-3 mb-1.5">
-              <div className="relative flex-shrink-0 self-start mt-1.5 lg:mt-2">
+              <div className="relative flex-shrink-0 self-start">
                 <Film className="w-6 h-6 lg:w-8 lg:h-8 text-primary film-reel-animate" />
                 <div className="absolute inset-0 blur-sm">
                   <Film className="w-6 h-6 lg:w-8 lg:h-8 text-primary opacity-30" />
                 </div>
               </div>
               <div className="flex flex-col min-w-0">
-                <h1 className="text-primary tracking-wide text-3xl lg:text-5xl leading-none mb-2" style={{ fontFamily: "'Acheader', sans-serif", letterSpacing: '0.02em' }}>Rob Perry</h1>
+                <h1 className="text-primary tracking-wide text-2xl lg:text-4xl leading-none mb-2 whitespace-nowrap" style={{ fontFamily: "'Film', sans-serif", letterSpacing: '0.02em' }}>Rob Perry</h1>
                 <p className="text-xs lg:text-sm text-muted-foreground">UX Director</p>
               </div>
             </div>
@@ -183,7 +183,7 @@ function AboutSection() {
             {/* Contact Info - Title Card Style */}
             <div className="flex-1 min-w-0 w-full">
               <div className="mb-4 lg:mb-6 text-center md:text-left">
-                <h3 className="text-primary text-5xl lg:text-7xl tracking-tight mb-1" style={{ fontFamily: "'Film', sans-serif", letterSpacing: '0.05em' }}>
+                <h3 className="text-primary text-5xl lg:text-7xl tracking-tight mb-1" style={{ fontFamily: "'Acheader', sans-serif", letterSpacing: '0.05em' }}>
                   ROB PERRY
                 </h3>
                 <p className="text-xs lg:text-sm text-foreground uppercase tracking-widest" style={{ letterSpacing: '0.15em' }}>
