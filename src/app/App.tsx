@@ -45,18 +45,18 @@ export default function App() {
           {/* Header */}
           <div className="mb-6 lg:mb-12">
             <div className="flex items-center gap-3 mb-2">
-              <div className="relative">
+              <div className="relative flex-shrink-0">
                 <Film className="w-6 h-6 lg:w-8 lg:h-8 text-primary film-reel-animate" />
                 <div className="absolute inset-0 blur-sm">
                   <Film className="w-6 h-6 lg:w-8 lg:h-8 text-primary opacity-30" />
                 </div>
               </div>
-              <div>
-                <h1 className="text-primary tracking-wide text-3xl lg:text-5xl" style={{ fontFamily: "'Acheader', sans-serif", letterSpacing: '0.02em' }}>Rob Perry</h1>
-                <p className="text-xs lg:text-sm text-muted-foreground ml-2">UX Director</p>
+              <div className="flex flex-col min-w-0">
+                <h1 className="text-primary tracking-wide text-3xl lg:text-5xl leading-none mb-3" style={{ fontFamily: "'Acheader', sans-serif", letterSpacing: '0.02em' }}>Rob Perry</h1>
+                <p className="text-xs lg:text-sm text-muted-foreground">UX Director</p>
               </div>
             </div>
-            <p className="text-muted-foreground text-sm italic hidden md:block">
+            <p className="text-muted-foreground text-sm italic hidden md:block ml-9 lg:ml-11">
               "A portfolio in three acts"
             </p>
           </div>
