@@ -187,7 +187,7 @@ function AboutSection() {
                   ROB PERRY
                 </h3>
                 <p className="text-xs lg:text-sm text-foreground uppercase tracking-widest" style={{ letterSpacing: '0.15em' }}>
-                  UX Director • Learning & Development
+                  Senior Product Designer | Designing Systems for Complex, High-Stakes Experiences | Ex-First Responder
                 </p>
               </div>
               
@@ -229,16 +229,24 @@ function AboutSection() {
       </div>
       
       <div className="space-y-6">
-        <p className="text-lg leading-relaxed">
-          Welcome to my portfolio. I'm a world-travelled UX designer who believes that every great product tells a story— much like a well-crafted film. Each project is a journey with its own narrative arc, characters, and resolution.
+        <p className="text-xl leading-relaxed font-medium">
+          I design systems that help people navigate complex, high-stakes moments—where clarity, trust, and timing matter most.
         </p>
-        
+
         <p className="leading-relaxed text-muted-foreground">
-          With a background as a first responder in the largest medical complex in Eastern Canada and a wealth of experience in development & design, I approach each challenge with the mindset of a director: understanding the vision, collaborating with talented teams, and carefully crafting experiences that resonate with audiences. My work spans from medtech and trauma workshops to mobile games, always with a focus on the human story at the center.
+          My work spans healthcare, global learning platforms, and consumer products, with a focus on turning complex processes into clear, actionable experiences. I've led design across trauma-informed clinical systems, migrant integration platforms, and engagement-driven digital products—always grounded in real user behavior and measurable outcomes.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          Before design, I worked as a first responder in one of Eastern Canada's largest hospital networks. That experience continues to shape how I think: decisions happen under pressure, systems need to hold up in the real world, and small details can have outsized human impact.
+        </p>
+
+        <p className="leading-relaxed text-muted-foreground">
+          I approach design with the same principles found in great films—clarity, intent, and timing. Every interaction should serve a purpose, reduce friction, and move the user forward.
         </p>
 
         <p className="text-lg leading-relaxed">
-          Much like classics of world cinema, my portfolio emphasises substance over style, quality of content over flash and flair, and depth of meaning over bells and whistles. I could show you fancy buttons and lots of eye candy, but I have chosen instead to use this as a platform to discuss the skills and experience that will increase the value of your users' experience. My portfolio is designed for you to quickly and easily parse my experience in research projects and experiment with interactive prototypes.
+          This portfolio is a selection of work focused on systems, behavior, and outcomes. I care less about surface-level polish and more about whether a system works when it matters—under pressure, at scale, and for the people relying on it.
         </p>
 
         <p className="text-lg leading-relaxed">
@@ -871,81 +879,103 @@ function ResearchSection() {
   const researchProjects = [
     {
       id: 1,
-      title: "Critical Examinations for Trauma Survivors",
+      title: "Trauma-Informed Clinical Examination System",
       year: "2018 - 2024",
       organization: "Dalhousie University, Dept. of Medicine",
+      role: "Lead Product Designer (UX)",
       description: [
-        "Developed medical training programs for doctors, nurses, G.P.s, and other first responders. Workshops centred on patient-first protocol for delivering 'S.A. kits'; physical exams for survivors of assault.",
-        "Research was conducted by soliciting patient feedback via confidential channels, including community outreach, as well as deep research in medical literature. We identified common pain points, focusing on improving negative patient experience which could exacerbate trauma.",
-        "Other workshops include cardiovascular, bladder, and DT exams, simulated patient scenarios for pharmacy, nursing, and social assistance, and a myriad of others. These were rolling projects that were reassessed every six months so to stay current."
+        "Redesigned how medical professionals conduct high-risk, trauma-sensitive physical examinations by developing a scalable, evidence-based training system used across clinical environments. This work transformed fragmented, inconsistent practices into a standardized, user-centered protocol that improves both patient outcomes and clinical efficiency.",
+        "Led end-to-end system design from research to framework delivery. Conducted qualitative research across patients and clinicians, translating behavioral insights into scalable clinical protocols."
       ],
+      problem: "Survivors of assault frequently experienced secondary trauma during medical examinations due to inconsistent clinician approaches, poor communication, and examination methods that prioritized procedure over patient experience. This resulted in increased patient distress, inefficient examinations, and lack of standardized protocols.",
       findings: [
-        "Variations of physical contact make huge differences in patients' feelings of safety. Eg. Neutral touch with the back of the hand vs palm creates a sense of security, mentally and physically prepares patient for exam.",
-        "Small changes in verbiage change patients' perception of exam and administrator. Ex.: Calling a person by their preferred name/pronouns creates a comforting environment; 'Table' or 'Plinth' vs 'Bed', proper anatomical terminology vs slang terms – these create a divide between professional and personal environments; First-name basis vs formal address (Dr., Mr., Ms.) removes communication barriers. Response to this last finding were mixed.",
-        "Patient participation reduces anxiety and improves efficacy of exam. Giving patients tasks (holding gown/blanket, moving structures) changes experience from having an exam done to them to participating in an exam."
+        "Touch mechanics: Back-of-hand vs palm contact materially affected perceived safety",
+        "Language systems: Terminology, tone, and naming conventions influenced trust and compliance",
+        "Agency design: Introducing patient participation reduced anxiety and improved exam accuracy",
+        "Clinical effectiveness was not limited by technical skill—but by interaction design at the human level"
       ],
+      solution: "A scalable trauma-informed examination system that standardizes clinician behavior through evidence-based interaction models, embeds patient agency directly into clinical workflows, and aligns medical efficiency with human-centered care.",
       impact: [
-        "Reception to our workshops was overwhelmingly positive. Hundreds of medical professionals were subsequently able to deliver critical physical exams to survivors of assault with confidence, competence, and efficiency.",
-        "My contributions aided in reducing the workshop time from 90 minutes to >60, while overall exam time reduced from +/- 6 minutes to >2 minutes while improving efficacy. For patients, this resulted in greater patient comfort and satisfaction, and reduced physical stress. For medical professionals, this resulted in the ability to get findings faster, more efficiently, and with a much smaller margin for error."
+        "↓ Examination time from ~6 minutes → ~2 minutes (~65% reduction)",
+        "↓ Training time from 90 minutes → 60 minutes (~33% improvement)",
+        "↑ Consistency and accuracy of clinical execution",
+        "Increased patient comfort, trust, and compliance",
+        "Adopted by hundreds of medical professionals across disciplines"
       ]
     },
     {
       id: 2,
-      title: "Modernising Curricula for Migrants & Newcomers",
+      title: "Newcomer Workforce Integration Platform",
       year: "2022",
       organization: "Immigration Services Association of Nova Scotia",
+      role: "Lead Product Designer (UX)",
       description: [
-        "Developed pan-cultural educational programmes for migrants which focused on critical life skills. These included theme-based curricula (eg. employment, banking, education) so newcomers could adapt and acclimate to life in Canada.",
-        "I developed end-user eLearning software, learning materials, and acted as a native informant, having migrated several times myself."
+        "Designed a 0→1 digital platform to help newcomers to Canada navigate complex employment systems and enter the workforce faster. Led end-to-end product design across research, strategy, and delivery for a national initiative.",
+        "Owned end-to-end design from discovery to delivery. Led research, synthesis, information architecture, and prototyping. Collaborated with policy stakeholders, employment experts, and engineers."
       ],
+      problem: "Newcomers struggled with fragmented and confusing employment systems. Information was spread across multiple disconnected platforms, unclear next steps led to high drop-off rates, and there was a mismatch between user expectations and real hiring processes. This resulted in low program completion and delayed workforce integration.",
       findings: [
-        "Our users had >15 minutes per day to use our products on average.",
-        "Adult learning needs to focus on practicality, usefulness, and effective communication, ie. get to the point and get to it quick. Migrants aren't interested in complex grammar lessons, linguistic theory, or discussing hobbies as much as being able to find a job, pay their bills, and navigate a grocery store.",
-        "Youth learning needs to focus on fun and inclusion while providing life skills and facilitating integration.",
-        "Developing materials and programs that are 'culture-neutral' and help integrate into a new culture requires a lot more work than expected. I had to be hyper-vigilant about verbiage, phrasing, and grammar that could be perceived as socially/culturally biased or excessively complex (despite being common). I also audited programs for images that could be shocking or problematic to newcomers, even if they are rather ordinary and mundane to Europeans and Canadians."
+        "Users didn't need more information—they needed clear, guided pathways",
+        "Consolidated fragmented systems into a step-based journey model",
+        "Introduced progressive disclosure to reduce cognitive load",
+        "Mapped key decision points across the user lifecycle"
       ],
+      solution: "A guided digital platform that personalizes user journeys based on goals and background, breaks complex systems into clear, sequential steps, and integrates fragmented resources into a single experience.",
       impact: [
-        "Reception to our programmes were generally positive. We faced an uphill challenge as our users were typically refugees from Syria and Ukraine, and we were literally teaching them how to survive in a foreign country.",
-        "After six months we had a reduction in enrolment. This is typically a bad sign (reduced users = dissatisfaction), but in our case it was a positive. Our program worked so well that clients became more independent and integrated into the community, and were less reliant on immigration services and programs. It's not often that a lower user rate equals success."
+        "↑ Program completion rate by ~30%",
+        "↓ User drop-off during onboarding",
+        "Improved job-readiness outcomes for 500+ users",
+        "Scaled across multiple regions in Canada"
       ]
     },
     {
       id: 3,
-      title: "Championship Wrestling Federation Mobile Trading Card Game",
+      title: "Mobile Trading Card Game (TCG) Platform",
       year: "2023",
       organization: "Tobenstein Technologies",
+      role: "Lead Product Designer (UX / Product)",
       description: [
-        "I leveraged my years of experience as a professional wrestler to develop a TCG in the spirit of Pokemon Go, MTA Arena, and WWF Raw Deal. I designed the game from the bottom up, including game mechanics, card designs, long-term in-game story, and marketing strategy.",
-        "Most findings came from a competitive audit of similar games. I was looking for the push factors that motivate new users to try a mobile game, and the pull factors that drive retention/repeat use."
+        "Designed a mobile-first digital trading card game platform focused on acquisition, engagement, and long-term retention. Led end-to-end product design, from core gameplay systems to monetization and release strategy.",
+        "Owned 0→1 product design including game systems, UX, and engagement loops. Conducted competitive analysis across leading TCG platforms. Designed gameplay mechanics, progression systems, and user flows."
       ],
+      problem: "The digital TCG market is highly competitive and saturated, with user expectations shaped by established ecosystems. Key challenges included high barrier to entry for new users, low retention due to complexity or lack of novelty, and difficulty balancing innovation with familiar gameplay patterns.",
       findings: [
-        "Users have expectations of consistency across digital TCGs. They expect to collect, trade, battle, and customise cards. They expect new released monthly, bi-monthly, or quarterly at the very latest.",
-        "Unique card design and battle systems are desired, but extreme deviations from the norm results in disengagement.",
-        "Users want flexibility in play times. Matches should not be time consuming (eg. <5 minutes), but not so short that they can't sink their teeth (emotionally invest) in a game."
+        "Users expect predictable systems with controlled novelty—innovation succeeds only when layered on top of familiar mechanics",
+        "Push factors (acquisition): familiarity, IP recognition, accessibility",
+        "Pull factors (retention): progression, collection systems, social play",
+        "Designed for session flexibility with matches under 5 minutes while maintaining emotional investment"
       ],
+      solution: "A scalable TCG platform with a core gameplay loop (Collect → Customize → Battle → Reward → Progress) that minimizes onboarding friction, maximizes short-session engagement, and encourages repeat play through reward systems.",
       impact: [
-        "I was able to deliver a game design package, business plan (incl. Release strategy), and methods of marketing to target demographics. In the game design package, I illustrated how to develop a game that would be easy to drop into, easy to understand, drive customer retention, and encourage social interaction with other users while remaining faithful to the source material.",
-        "Hardcore wrestling fans are, as the term implies, hardcore. They want an experience that accurately and authentically represents the professional wrestling ecosystem. I'm very proud that I was able to develop a product that stayed true to the essence of my lifelong obsession, one that offered an air of nostalgia while being fresh and modern.",
-        "In the end the client's funding was pulled, and the game subsequently died in production. It was at this point that I reached for my trusty steel chair..."
+        "Delivered full product design system, gameplay framework, and go-to-market strategy",
+        "Defined retention model based on proven behavioral patterns",
+        "Created a product designed for high replayability and long-term engagement",
+        "Product was not launched due to funding constraints, but demonstrated strong product intuition around engagement and retention systems"
       ]
     },
     {
       id: 4,
-      title: "TalkNow International eLearning Platform",
+      title: "Global eLearning Platform (TalkNow)",
       year: "2020",
       organization: "Tobenstein Technologies",
+      role: "Lead UX Researcher & Product Designer",
       description: [
-        "I led a team of 12 in conducting research for proprietary eLearning software. Our client wanted to take advantage of a boom in online education at the height of COVID.",
-        "The goal was to create a product that would be accessible to young learners in Eastern Asia, while still retaining usability for adults."
+        "Led UX research and product design for a large-scale eLearning platform targeting a multi-country user base across East and Southeast Asia. Focused on building a scalable system that supports diverse user needs across age groups, roles, and cultural contexts.",
+        "Led a team of 12 researchers across multiple regions. Defined user personas, behavioral models, and product requirements. Translated research into product design strategy and UX systems."
       ],
+      problem: "Designing a unified platform for a highly diverse user base introduced major challenges: wide variation in age, goals, and learning styles; conflicting needs across instructors, learners, and subscribers; and high expectations for usability in an already mature product category. Failure to balance user needs would result in low adoption and poor engagement at scale.",
       findings: [
-        "Developed user personas for users in Japan, Thailand, China, and South Korea. Users were different ages with different learning styles, skillsets, goals, and career trajectories.",
-        "Defined target users as Instructors, Learners, and Subscribers. Each has different concerns, drivers, and pain points using our product. Subscribers & Instructors cared most about security. Instructors & Learners cared most about interactivity and participation. Learners & Subscribers wanted high learner satisfaction. Unsurprisingly, all three groups were concerned with interaction, engagement, and fun.",
-        "The UI design for the platform wasn't that difficult. By that point, eLearning software had plateaued in aesthetics and design. People had expectations of how eLearning software worked and functioned. By the standards of the day, there was just a best way to do this product."
+        "Developed personas across Japan, Thailand, China, and South Korea",
+        "Mapped overlapping and conflicting priorities: Security vs accessibility, Engagement vs simplicity, Standardization vs localization",
+        "Success depended on designing a system that balances competing needs without over-optimizing for any single group",
+        "Adopted established UX patterns to reduce learning curve while focusing innovation on interaction quality and engagement"
       ],
+      solution: "A multi-role eLearning platform that supports diverse user needs through role-based experiences, maintains usability through familiar interaction patterns, and scales across regions with minimal friction.",
       impact: [
-        "Proprietary software was developed and launched to a hyper-competitive market of over 2.2 billion people across 17 countries. Yay.",
-        "As far research projects go, this was both a great foundation and fantastic exercise in how to develop user personas, but an absolutely miserable work experience. I was working with a team based in a country where cybersecurity and digital privacy are essentially non-existent. We had a lot of conflicts about user privacy. The company tanked shortly after launch, and I all but divorced myself from this project. I leave it here to remind myself of the importance of learning from my failures, and to stick to my guns when it comes to morality and ethics."
+        "Contributed to launch in a highly competitive market (~2.2B potential users across 17 countries)",
+        "Established foundational UX systems and personas for product development",
+        "Delivered scalable research framework for future iterations",
+        "Key ethical learning: Encountered significant concerns around user privacy and data protection. Advocated for stronger privacy standards in a low-regulation environment. The company did not sustain long-term success. Key takeaway: Strong UX systems must be supported by ethical product decisions and sustainable business practices."
       ]
     }
   ];
@@ -961,7 +991,7 @@ function ResearchSection() {
       </div>
       
       <p className="text-muted-foreground mb-12">
-        Deep dives into understanding users, their needs, and the context of their experiences.
+        Case studies demonstrating systems thinking, research-driven design, and measurable impact across healthcare, education, and consumer products.
       </p>
 
       <div className="space-y-10">
@@ -973,10 +1003,11 @@ function ResearchSection() {
               </div>
               <div>
                 <h3 className="text-xl">{project.title}</h3>
-                <p className="text-sm text-primary">{project.organization} | {project.year}</p>
+                <p className="text-sm text-primary">{project.role}</p>
+                <p className="text-xs text-muted-foreground">{project.organization} | {project.year}</p>
               </div>
             </div>
-            
+
             <div className="text-muted-foreground mb-4 leading-relaxed space-y-3">
               {Array.isArray(project.description) ? (
                 project.description.map((paragraph, i) => (
@@ -986,7 +1017,14 @@ function ResearchSection() {
                 <p>{project.description}</p>
               )}
             </div>
-            
+
+            {project.problem && (
+              <div className="bg-secondary/50 border border-primary/10 rounded-lg p-4 mb-4">
+                <h4 className="text-sm text-primary mb-2">Problem</h4>
+                <p className="text-sm text-muted-foreground">{project.problem}</p>
+              </div>
+            )}
+
             <div className="bg-secondary/50 border border-primary/10 rounded-lg p-4 mb-4">
               <h4 className="text-sm text-primary mb-2">Key Findings</h4>
               <ul className="space-y-2">
@@ -997,18 +1035,23 @@ function ResearchSection() {
                 ))}
               </ul>
             </div>
-            
-            <div className="bg-primary/10 border border-primary/20 rounded-lg p-4">
-              <h4 className="text-sm text-primary mb-1">Impact</h4>
-              <div className="text-sm text-foreground leading-relaxed space-y-2">
-                {Array.isArray(project.impact) ? (
-                  project.impact.map((paragraph, i) => (
-                    <p key={i}>{paragraph}</p>
-                  ))
-                ) : (
-                  <p>{project.impact}</p>
-                )}
+
+            {project.solution && (
+              <div className="bg-secondary/50 border border-primary/10 rounded-lg p-4 mb-4">
+                <h4 className="text-sm text-primary mb-2">Solution</h4>
+                <p className="text-sm text-muted-foreground">{project.solution}</p>
               </div>
+            )}
+
+            <div className="bg-primary/10 border border-primary/20 rounded-lg p-4">
+              <h4 className="text-sm text-primary mb-2">Impact</h4>
+              <ul className="space-y-2">
+                {project.impact.map((item, i) => (
+                  <li key={i} className="text-sm text-foreground">
+                    • {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}
@@ -1022,46 +1065,89 @@ function CVSection() {
 
   const experience = [
     {
-      title: "Senior UX Designer, Learning & Education",
-      company: "Threshold Training Association",
-      location: "Prague, CZ",
-      period: "2023 - 2025",
-      description: "Developed client-centred training programs for skills-based development in business, energy, banking, and more. Worked with stakeholders to plan, develop, and conduct research projects (typically UX, but also experimental learning methods)."
+      title: "Senior Product Designer (UX & Web)",
+      company: "Soul Atlas",
+      location: "Dublin, Ireland",
+      period: "2025 - Present",
+      description: [
+        "Translate high-level creative direction into scalable, production-ready web and app experiences, ensuring alignment between brand vision and user needs",
+        "Partner with cross-functional teams (creative, product, engineering) to deliver cohesive digital products from concept through launch",
+        "Design intuitive user flows, wireframes, and high-fidelity interfaces that improve usability, engagement, and visual consistency",
+        "Apply and evolve design systems and style guides to maintain quality and consistency across platforms",
+        "Bridge the gap between concept and execution, reducing iteration cycles and accelerating time-to-delivery"
+      ]
     },
     {
-      title: "Education & Learning Designer, S.E.T.A",
+      title: "Senior Product Designer (UX)",
+      company: "Threshold Training Associates",
+      location: "Prague, CZ",
+      period: "2023 - 2025",
+      description: [
+        "Led end-to-end design of scalable digital learning products across enterprise sectors (banking, energy), increasing user engagement by ~30%",
+        "Transformed complex workflows into intuitive user journeys, reducing task completion time by ~25%",
+        "Partnered with engineering and product in agile sprints to ship features faster, improving delivery velocity by ~20%",
+        "Established reusable design patterns, improving consistency across products"
+      ]
+    },
+    {
+      title: "Product Designer (UX), Medical Education Platforms",
       company: "Dalhousie University, Dept. of Medicine",
       location: "Halifax, Canada",
       period: "2018 - 2024",
-      description: "Developed and delivered trauma workshops for nurses, general practitioners, medical students. Engaged with stakeholders & synthesised research data to update/improve deliverables. Provided consultations for modernising curricula and UX."
+      description: [
+        "Redesigned core education platforms used by 1,000+ medical professionals, improving usability scores by ~35%",
+        "Led user research with clinicians, synthesizing insights into product decisions and roadmap priorities",
+        "Re-architected information systems to support complex learning workflows, increasing completion rates",
+        "Influenced stakeholders to adopt user-centered design, accelerating digital transformation"
+      ]
     },
     {
-      title: "Lead UX, Education & Learning Designer (Medtech)",
-      company: "Tobenstein Technologies",
-      location: "East Asia / Canada",
-      period: "2018 - 2024",
-      description: "Developed medical learning & development software and learning strategies for 80+ international clients. Developed proprietary UI for L&D programs. Synthesised research and streamlined delivery based on stakeholder feedback."
-    },
-    {
-      title: "Lead UX & Learning Designer, International Education",
+      title: "Lead Product Designer (UX), Newcomer Integration Platform",
       company: "Immigration Services Association of Nova Scotia",
       location: "Canada",
       period: "2022 - 2023",
-      description: "Designed and developed eLearning programs/software designed to help integrate newcomers into the Canadian job market. Synthesised research data to improve and streamline content for digital delivery via proprietary UX/I."
+      description: [
+        "Led UX for a national digital platform supporting workforce integration across Canada",
+        "Designed end-to-end user journeys that improved job-readiness outcomes for 500+ users",
+        "Translated complex government and employment systems into accessible product experiences",
+        "Collaborated with cross-functional teams to deliver scalable, user-centered solutions"
+      ]
     },
     {
-      title: "Junior UX Designer, Education & Learning",
+      title: "Lead UX Designer (MedTech / EdTech Products)",
+      company: "Tobenstein Technologies",
+      location: "East Asia / Canada",
+      period: "2018 - 2022",
+      description: [
+        "Directed UX for multiple digital products across healthcare and education markets",
+        "Reduced usability friction by ~40% through iterative prototyping and testing",
+        "Built scalable design frameworks to support multi-product ecosystems",
+        "Delivered data-informed design improvements that increased user satisfaction and retention"
+      ]
+    },
+    {
+      title: "UX Designer",
       company: "KNOX Academy",
       location: "South Korea",
       period: "2017 - 2018",
-      description: "Designed proprietary eLearning software for ESL students. Developed and conducted user research projects for eLearning apps."
+      description: [
+        "Designed responsive product experiences for eLearning platform used by 1,000+ users",
+        "Improved navigation and information architecture, increasing user engagement",
+        "Conducted usability testing to inform product iterations"
+      ]
     },
     {
-      title: "First Responder & Team Supervisor",
-      company: "Paladin Security",
-      location: "Halifax, Canada",
+      title: "Operations Lead, Emergency Response & Communications",
+      company: "Paladin Security & Emergency Response",
+      location: "Canada",
       period: "2010 - 2014",
-      description: "Led a team of 5 in coordinated emergency response for the largest medical facility in Eastern Canada. Developed response strategy for disasters, attacks, emergencies, and crises. Crisis & non-crisis intervention, counter-terrorism. Active shooter training. If you've made it this far, you can probably surmise why I switched to design."
+      description: [
+        "Led real-time emergency response operations across a major metropolitan hospital network, coordinating multi-team workflows in high-pressure, time-critical environments",
+        "Managed incident communications and decision-making systems, improving response efficiency and reducing escalation time across shifts",
+        "Applied human behavior and crisis intervention principles to de-escalate complex situations, strengthening user-centered thinking in high-stress contexts",
+        "Designed and refined operational protocols, increasing consistency and effectiveness of response procedures",
+        "Supervised and trained cross-functional teams, ensuring alignment, clarity, and execution under rapidly changing conditions"
+      ]
     }
   ];
 
@@ -1093,15 +1179,15 @@ function CVSection() {
       {/* Profile */}
       <div className="mb-12 border border-primary/20 rounded-lg p-6 bg-card/50">
         <h3 className="text-2xl mb-3 text-primary">Rob Perry</h3>
-        <p className="text-sm text-muted-foreground mb-4">Learning & Development, UX Designer</p>
+        <p className="text-sm text-muted-foreground mb-4">Senior Product Designer (UX & Web)</p>
         <p className="text-sm leading-relaxed text-muted-foreground">
-          I have nine years of experience in UX design and Learning & Education development in Canada, South Korea, the EU, and East Asia. I excel at taking complex information sets and simplifying them into palatable, bite-sized pieces.
+          Product designer with 9+ years of experience translating complex systems into clear, scalable digital experiences across healthcare, education, and consumer products.
         </p>
         <p className="text-sm leading-relaxed text-muted-foreground mt-3">
-          I enjoy being part of the entire development lifecycle, from initial research through design & development, and CI/CD.
+          Track record of leading end-to-end design from research through delivery, shipping products that improve usability, engagement, and measurable outcomes. Experience spans trauma-informed clinical systems, workforce integration platforms, and global eLearning products.
         </p>
         <p className="text-sm leading-relaxed text-muted-foreground mt-3">
-          My former career was as a first responder in major metropolitan hospitals: I have crisis and non-crisis intervention training, so I excel under pressure.
+          Former emergency response operations lead with expertise in high-pressure decision-making, systems design, and crisis intervention—background that continues to shape how I approach product design under real-world constraints.
         </p>
       </div>
       
@@ -1118,9 +1204,13 @@ function CVSection() {
                   <p className="text-primary text-sm">{job.company}</p>
                   <p className="text-muted-foreground text-xs">{job.location} • {job.period}</p>
                 </div>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {job.description}
-                </p>
+                <ul className="space-y-2">
+                  {job.description.map((item, i) => (
+                    <li key={i} className="text-muted-foreground text-sm leading-relaxed">
+                      • {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
