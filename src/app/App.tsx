@@ -186,9 +186,10 @@ function AboutSection() {
                 <h3 className="text-primary text-5xl lg:text-7xl tracking-tight mb-1" style={{ fontFamily: "'Acheader', sans-serif", letterSpacing: '0.05em' }}>
                   ROB PERRY
                 </h3>
-                <p className="text-xs lg:text-sm text-foreground uppercase tracking-widest" style={{ letterSpacing: '0.15em' }}>
-                  Senior Product Designer | Designing Systems for Complex, High-Stakes Experiences | Ex-First Responder
-                </p>
+                <div className="text-xs lg:text-sm text-foreground uppercase tracking-widest" style={{ letterSpacing: '0.15em' }}>
+                  <p>Senior Product Designer | Ex-First Responder</p>
+                  <p>Designing Systems for Complex, High-Stakes Experiences</p>
+                </div>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-6 gap-y-2">
