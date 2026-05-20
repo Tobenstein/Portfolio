@@ -665,11 +665,15 @@ export default function App() {
           </div>
 
           <div className="hero-stage" style={{ transform: `translate3d(0, ${scrollY * 0.03}px, 0)` }}>
-            <div className="portrait-panel">
+            <div className="portrait-panel hero-reveal-card" tabIndex={0}>
               <img src={profilePhoto} alt="Rob Perry" />
               <div>
                 <span>9+ years of diverse international experience.</span>
                 <strong>Ex-first responder designing systems where small details have human consequences.</strong>
+                <p>
+                  Hi! I'm Rob. I design streamlined, intuitive products for healthcare, learning & development, public
+                  service, and like to throw in the occasional oddity. Welcome!
+                </p>
               </div>
             </div>
             <div className="screen-stack">
