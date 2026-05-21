@@ -158,15 +158,17 @@ a {
   display: grid;
   grid-template-columns: minmax(0, 0.78fr) minmax(24rem, 1.22fr);
   gap: clamp(2rem, 5vw, 5rem);
-  align-items: center;
+  align-items: start;
   width: min(1180px, calc(100vw - 2rem));
   margin: 0 auto;
-  padding: 8rem 0 4rem;
+  padding: clamp(5.6rem, 11vh, 7rem) 0 clamp(2rem, 4vh, 3rem);
   position: relative;
 }
 
 .hero-copy {
   max-width: 38rem;
+  align-self: start;
+  padding-top: clamp(1rem, 6vh, 3.2rem);
   will-change: transform;
 }
 
@@ -194,16 +196,16 @@ a {
 
 .hero-copy h1 {
   max-width: 15ch;
-  font-size: clamp(2.75rem, 4.8vw, 4.9rem);
+  font-size: clamp(1.9rem, 2.9vw, 3rem);
   line-height: 1.02;
 }
 
 .hero-lede {
   max-width: 43rem;
-  margin: 1.5rem 0 0;
+  margin: 1.15rem 0 0;
   color: rgba(245, 247, 252, 0.74);
-  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
-  line-height: 1.6;
+  font-size: clamp(0.9rem, 1.25vw, 1.02rem);
+  line-height: 1.48;
 }
 
 .hero-actions,
@@ -215,7 +217,7 @@ a {
 }
 
 .hero-actions {
-  margin-top: 2rem;
+  margin-top: 1.45rem;
 }
 
 .primary-action,
@@ -252,16 +254,16 @@ a {
 }
 
 .hero-stage {
-  min-height: 34rem;
+  min-height: 32rem;
   position: relative;
-  align-self: center;
-  top: clamp(-5rem, -7vh, -2rem);
+  align-self: start;
+  top: clamp(2.25rem, 5.5vh, 4.5rem);
   will-change: transform;
 }
 
 .screen-stack {
   position: absolute;
-  inset: 10% 0 2% 3%;
+  inset: 7% 0 6% 3%;
   border-radius: 8px;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.14), transparent 32%),
