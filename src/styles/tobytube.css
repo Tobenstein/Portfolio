@@ -17,7 +17,7 @@
 .tt-hero > img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
 .tt-hero-shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg,rgba(0,0,0,.08) 30%,rgba(0,0,0,.92) 100%),linear-gradient(90deg,rgba(0,0,0,.65),transparent 58%); }
 .tt-hero-copy { width: 100%; padding: clamp(3rem,7vw,8rem); }
-.tt-hero h2 { margin: .5rem 0 0; font: normal clamp(7rem,20vw,19rem)/.72 'Film','Playfair Display',serif; letter-spacing: -.04em; text-transform: uppercase; }
+.tt-hero h2 { margin: clamp(1.5rem,2.5vw,2.75rem) 0 0; font: normal clamp(7rem,20vw,19rem)/.72 'Film','Playfair Display',serif; letter-spacing: -.04em; text-transform: uppercase; }
 .tt-hero-copy > p:last-child { margin: 2rem 0 0; font: 400 clamp(1.4rem,2.5vw,2.6rem)/1.2 'Playfair Display',Georgia,serif; color: var(--tt-lime); }
 
 .tt-opening,.tt-thinking { display: grid; grid-template-columns: 1fr 3fr; gap: clamp(2rem,8vw,10rem); padding: clamp(7rem,12vw,13rem) clamp(1.25rem,6vw,7rem); }

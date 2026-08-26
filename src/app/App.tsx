@@ -34,7 +34,7 @@ const seriousProjects: Project[] = [
   {
     number: "03", id: "paladin", client: "Paladin · Crisis response",
     title: "Six Seconds or Dead: How Working in Crisis Response Influences My Designs",
-    summary: "What happens when every choice competes for attention—and hesitation has a measurable cost.",
+    summary: "If you're reading this, know that i just pushed this update. This page will be updated in the next 7-10 business days (or whenever I get around to it. Just call me and I'll give you the gist of it)",
     outcome: "A design philosophy grounded in triage, calm communication and making the next action unmistakable.",
     chapters: [
       { label: "The situation", copy: "A heart attack, a fire alarm, a woman in labour and an armed threat do not arrive in a useful sequence. In crisis response, ambiguity is not an inconvenience. It is risk." },
