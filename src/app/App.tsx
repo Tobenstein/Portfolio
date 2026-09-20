@@ -90,7 +90,7 @@ function DalhousieCase({ onClose }: { onClose: () => void }) {
     <button className="close" onClick={onClose} aria-label="Close case study"><X/></button>
     <article>
       <header className="dal-hero"><img src="/dal-exam-room.jpg" alt="A prepared clinical examination room"/><div className="dal-hero-copy"><p className="project-context">Dalhousie University · 2018–2024</p><h2 id="dal-title">Designing Trauma-Informed Medical Education at Scale</h2><p>How do you teach an invasive clinical examination—quickly, thoroughly and without repeating the dynamics of trauma?</p></div></header>
-      <section className="dal-summary"><p className="section-index">The assignment</p><h3>Condense a semester of clinical study into sixty minutes.</h3><div><p>Our patients are survivors of severe, potentially life-threatening physical assault.</p><p>Patients must now undergo a pelvic exam which will test for/gauge the extent of injuries. This test, in some ways, replicates the physical trauma they have experienced.</p><p>Our medical professionals are examining the patients with the goal of creating a record of the physical trauma, as well as gathering data for potential diagnoses.</p><p>I have to devise a learning program which condenses a full semester of clinical examination study into a 60 minute session to be delivered by two Sensitive Exam Teaching Associates (SETAs) who will serve as simulated patients.</p></div></section>
+      <section className="dal-summary"><p className="section-index">The assignment</p><h3>Condense a semester of clinical study into sixty minutes.</h3><div><p>Our patients are survivors of severe, potentially life-threatening physical assault.</p><p>Patients must now undergo a pelvic exam which will test for/gauge the extent of injuries. This test, in some ways, replicates the physical trauma they have experienced.</p><p>Our medical professionals are examining the patients with the goal of creating a record of the physical trauma, as well as gathering data for potential diagnoses.</p><p>I have to devise a learning programme which condenses a full semester of clinical examination study into a 60 minute session to be delivered by two Sensitive Exam Teaching Associates (SETAs) who will serve as simulated patients.</p></div></section>
       <section className="dal-facts" aria-label="Project facts"><div><span>Role</span><strong>Lead UX Designer<br/>Instructional Designer<br/>Researcher</strong></div><div><span>Duration</span><strong>6 years</strong></div><div><span>Reach</span><strong>~360 learners<br/>30 workshops</strong></div><div><span>Feedback</span><strong>96% positive</strong></div></section>
       <figure className="dal-wide-image"><img src="/dal-clinical-setup.jpg" alt="Medical educators preparing a simulated clinical examination space"/><figcaption>Clinical training required the room, tools and people to function as one carefully staged system.</figcaption></figure>
       <section className="dal-section split"><div><p className="section-index">The constraint</p><h3>Everything mattered.<br/>We had one hour.</h3></div><div className="dal-body"><p>Two Sensitive Exam Teaching Associates—serving as simulated patients—had to brief pairs of learners and observe each learner completing the practicum.</p><p>The curriculum covered four interconnected systems:</p><ol><li><strong>Clinical setup</strong><span>Which tools are needed, where they belong and why their order signals competence and safety.</span></li><li><strong>Body language</strong><span>Talk before touch, hand placement, eye contact, and the difference between standing over someone and sitting beside them.</span></li><li><strong>Verbal communication</strong><span>Inclusive language, accurate nomenclature and words that preserve trust rather than quietly diminish it.</span></li><li><strong>Pacing</strong><span>Fast enough to minimise time under stress; deliberate enough that the patient never feels rushed or dismissed.</span></li></ol></div></section>
@@ -151,7 +151,7 @@ function TobytubeCase({ onClose }: { onClose: () => void }) {
           <p>There’s a pretty okay media-server SaaS product out there. Let’s call it Flex. I paid monthly because it was inexpensive and I didn’t want to pony up for a lifetime pass. After two years, I realised I had already paid for two lifetime passes. That’s a me problem.</p>
           <p>Then Flex doubled the lifetime price—and a year later, tripled it again.</p>
           <blockquote>“Homie don’t play dat.”<span>— Homie D. Clown</span></blockquote>
-          <p>Jellyfin offered an open-source alternative, but neither product handled certain media the way I wanted. Professional wrestling, for example, behaves like television building toward a film-sized event. Both systems insisted on separating media by format instead of respecting the experience.</p>
+          <p>Jellyfin offered an open-source alternative, but neither product handled certain media the way I wanted. Professional wrestling, for example, behaves like television building towards a film-sized event. Both systems insisted on separating media by format instead of respecting the experience.</p>
           <p>I’m a product of the video-rental era. My mother worked beside a wall of VHS tapes in nondescript black shells. I loved the mystery of knowing there were worlds in there.</p>
         </div>
         <div className="tt-store-pair">
@@ -255,20 +255,20 @@ function App() {
 
       <section className="intro" id="intro">
         <p className="section-index">Introduction</p>
-        <div><h2>I’m Rob, a Senior UX Designer who specializes in making complex things feel obvious.</h2>
+        <div><h2>I'm Rob, a Senior UX Designer (<span className="first-responder-accent">and former First Responder</span>) who specialises in making complex systems feel obvious.</h2>
           <p>I enjoy solving problems that don’t come with instruction manuals.</p>
           <p>Sometimes that means helping clinicians deliver better care to survivors of trauma.</p>
-          <p>Sometimes it means designing a streaming platform capable of organizing thousands of films.</p>
+          <p>Sometimes it means designing a streaming platform capable of organising thousands of films.</p>
           <p>The industries change.<br/>The thinking doesn’t.</p>
           <blockquote>I don’t draw screens.<br/><em>I build worlds.</em></blockquote>
         </div>
       </section>
 
       <section className="ai-statement" id="thinking">
-        <p className="section-index">AI &amp; judgment</p>
-        <div><h2>This portfolio was built with AI-assisted development.</h2>
-          <p>I use AI every day. It helps me prototype faster, explore more ideas, and automate repetitive work.</p>
-          <p>But deciding which problems to solve—and how to solve them—still requires human judgment.</p>
+        <p className="section-index">AI &amp; judgement</p>
+        <div><h2>We're all hyped about AI.</h2>
+          <p>I've used AI on a lot of projects. It can do some cool things; I can prototype faster, explore more ideas, and automate repetitive work.</p>
+          <p>But deciding which problems to solve - and how to solve them - still requires human judgement and accountability.</p>
           <blockquote>There’s no outsourcing taste—<br/><span>especially to a machine that is only as smart as we make it.</span></blockquote>
         </div>
       </section>
@@ -277,7 +277,8 @@ function App() {
         <p className="section-index">What this is</p>
         <div><h2>This isn’t a museum of deliverables.</h2>
           <p>I’m not trying to sell you the things I’ve already built.</p><p>It’s a map of how I think.</p>
-          <p className="small">I’m showing you the diversity of my skills and experience—and how they can help your business.</p>
+          <p className="small">I'm showing you the diversity of my skills and experience - and how they can help your business</p>
+          <p className="small">(don't worry, there are still prototypes you can play with)</p>
         </div>
       </section>
 
@@ -300,7 +301,7 @@ function App() {
         </form>
       </section>
     </main>
-    <footer><span>Rob Perry · Senior UX &amp; Product Designer</span><span>Designed with judgment. Built with help.</span></footer>
+    <footer><span>Rob Perry · Senior UX &amp; Product Designer</span><span>Founder of Tobenstein Technologies.</span></footer>
 
     {activeProject?.id === "dalhousie" ? <DalhousieCase onClose={() => setActiveProject(null)} /> : activeProject?.id === "tobytube" ? <TobytubeCase onClose={() => setActiveProject(null)} /> : activeProject && <div className={`case-overlay ${activeProject.tone === "personal" ? "personal-case" : ""}`} role="dialog" aria-modal="true" aria-labelledby="case-title">
       <button className="close" onClick={() => setActiveProject(null)} aria-label="Close case study"><X/></button>
