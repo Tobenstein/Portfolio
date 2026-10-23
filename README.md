@@ -15,7 +15,7 @@ npm run dev
 npm run build
 ```
 
-This site uses React, Vinext, and the Cloudflare Vite integration. The current deployment is managed through Sites; `.openai/hosting.json` preserves that site's identity. This source replaces the previous portfolio implementation and is not configured as a Vercel deployment.
+The GitHub/Vercel deployment uses Next.js. `vercel.json` selects the Next.js framework and output directory explicitly. The original Sites build remains available through `npm run dev:sites` and `npm run build:sites`; `.openai/hosting.json` preserves its identity.
 
 ## Previous portfolio
 
