@@ -2,6 +2,7 @@
 .portfolio-case{background:#f7f9f5;color:#133a32}
 .brand .brand-role{font-size:12px;letter-spacing:0;line-height:1.4;font-weight:400;max-width:210px}
 .story-with-logo .intro p+p{margin-top:1.4em}
+.experience-cv{margin:30px 0}.experience-jobs{list-style:none;padding:0;margin:26px 0 0}.experience-jobs li{padding:12px 0;border-bottom:1px solid var(--border);font-size:15px;line-height:1.6}
 .personal-project-card>img.prototype-preview-mobile{object-fit:contain;background:#1b1030}
 .case-prototype .kinoscoop-prototype iframe{height:85vh;min-height:650px}
 .case-prototype .prototype-phone iframe{height:960px}@media(max-width:560px){.case-prototype .prototype-phone iframe{height:min(960px,80svh)}}
