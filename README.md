@@ -1,11 +1,26 @@
+# Rob Perry — Portfolio
 
-  # Cinematic UX Portfolio
+Senior UX Designer & Researcher portfolio, with case studies and embedded interactive prototypes.
 
-  This is a code bundle for Cinematic UX Portfolio. The original project is available at https://www.figma.com/design/DmDVYllZjhdK2keQWUDXHb/Cinematic-UX-Portfolio.
+## Development
 
-  ## Running the code
+Requires Node.js 22.13 or newer.
 
-  Run `npm i` to install the dependencies.
+```sh
+npm ci
+npm run dev
+```
 
-  Run `npm run dev` to start the development server.
-  
+```sh
+npm run build
+```
+
+This site uses React, Vinext, and the Cloudflare Vite integration. The current deployment is managed through Sites; `.openai/hosting.json` preserves that site's identity. This source replaces the previous portfolio implementation and is not configured as a Vercel deployment.
+
+## Previous portfolio
+
+The previous implementation and its history are preserved on the `backup/portfolio-version3-2026-10-23` branch. The replacement commit also retains the existing main-branch history.
+
+## Contact form
+
+The published version currently uses direct email contact. The unfinished contact-form draft has not been included in this release.

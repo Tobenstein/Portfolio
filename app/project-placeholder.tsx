@@ -1,0 +1,1 @@
+export default function ProjectPlaceholder({name,description='Case study coming soon.'}:{name:string;description?:string}){return <article className="personal-project-card project-placeholder"><div><p className="eyebrow">COMING SOON</p><h2>{name}</h2><p>{description}</p></div></article>}

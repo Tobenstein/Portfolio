@@ -1,0 +1,7 @@
+'use client';
+
+import {Fragment} from 'react';
+import {NavigationMenu,NavigationMenuList,NavigationMenuItem,NavigationMenuTrigger,NavigationMenuContent,NavigationMenuLink} from '@/components/ui/navigation-menu';
+const groups=[{label:'About Me',links:[['My Story','/about'],['My Advantage','/about/our-advantage'],['Contact Me','/contact']]},{label:'Industries',links:[['Healthcare','/healthcare'],['Education','/education'],['Games','/games'],['Personal Projects','/personal-projects']]},{label:'Services',links:[['My Services','/services'],['Product Discovery and Design','/services/product-discovery-and-design'],['Software Development','/services/software-development'],['UX/UI consultations','/services/ux-ui-consultations']]}];
+export default function MainNavigation(){return <NavigationMenu className="site-navigation" aria-label="Main navigation" delay={100} closeDelay={180}><NavigationMenuList className="site-nav-list">{groups.map((group,i)=><Fragment key={group.label}>{i===2&&<NavigationMenuItem><NavigationMenuLink className="top-nav-link" render={<a href="/case-studies"/>}>Case Studies</NavigationMenuLink></NavigationMenuItem>}<NavigationMenuItem value={group.label}><NavigationMenuTrigger className="site-nav-trigger">{group.label}</NavigationMenuTrigger><NavigationMenuContent className="site-dropdown">{group.links.map(([label,href])=><NavigationMenuLink key={href} className="site-dropdown-link" render={<a href={href}/>}>{label}</NavigationMenuLink>)}</NavigationMenuContent></NavigationMenuItem></Fragment>)}</NavigationMenuList></NavigationMenu>}
+
