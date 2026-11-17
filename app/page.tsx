@@ -1,4 +1,6 @@
+import MailIcon from './mail-icon';
 import './landing.css';
+import Image from 'next/image';
 
 const caseStudies = [
   { name: 'Dalhousie', category: 'Medical education', title: 'Designing Trauma-Informed Medical Education at Scale', description: 'Turning sensitive clinical knowledge into a repeatable system built around consent, clarity and patient agency.', image: '/portfolio/dal-clinical-setup.jpg', alt: 'Clinical teaching setup at Dalhousie University', href: '/case-studies/curriculum-design' },
@@ -9,9 +11,10 @@ const caseStudies = [
 export default function Home() {
   return <main className="landing-refresh">
     <section className="landing-hero" aria-labelledby="landing-title">
-      <img className="landing-portrait" src="/portfolio/rob-portrait.jpg" alt="Rob Perry" width="144" height="144" fetchPriority="high" />
+      <Image className="landing-portrait" src="/portfolio/rob-portrait.jpg" alt="Rob Perry" width={432} height={432} quality={100} fetchPriority="high" />
       <h1 id="landing-title">Accessible designs.<br/>Measurable <em>impact</em>.</h1>
       <p className="landing-introduction">Senior UX Designer and Researcher, Educational Designer, and former Emergency First Responder. Finding facts, turning them into actionable insights, and improving experiences across multiple industries for 10 years (just check out the variety below!).</p>
+      <a className="button landing-mail" href="mailto:robperryinc@protonmail.com">Talk to Me <MailIcon/></a>
     </section>
     <aside className="portfolio-progress" aria-labelledby="portfolio-progress-heading">
       <h2 id="portfolio-progress-heading">The data says I have 9 seconds to get your attention.</h2>
@@ -20,10 +23,10 @@ export default function Home() {
     <section className="section landing-studies" id="expertise" aria-labelledby="case-studies-heading">
       <p className="eyebrow">SELECTED WORK</p>
       <h2 id="case-studies-heading">Case studies</h2>
-      <div className="landing-study-stack">{caseStudies.map((project, index) =>
+      <div className="landing-study-stack">{caseStudies.map((project) =>
         <article className="landing-study" key={project.name}>
           <div className="landing-study-copy">
-            <p className="eyebrow">0{index + 1} / {project.category}</p>
+            <p className="eyebrow">{project.category}</p>
             <h3>{project.name}</h3>
             <h4>{project.title}</h4>
             <p>{project.description}</p>
@@ -35,11 +38,11 @@ export default function Home() {
     </section>
     <section className="section landing-about" aria-labelledby="landing-about-heading">
       <div>
-        <h2 id="landing-about-heading">About Me</h2>
+        <h2 id="landing-about-heading"><a href="/about">About Me</a></h2>
         <div className="intro home-intro"><p>I'm Rob, a Senior UX Designer and Researcher with a decade of experience. I've worked with organisations in Ireland, Spain, Czechia, South Korea, Japan, and Canada to create intuitive, accessible, and <em>critical</em> systems for millions of users.</p><p>My portfolio isn't a gallery of pretty UI designs - it's a record of systems and experiences I've helped build. Some of them turned out to be better learning experiences than finished products, but there is no growth without failure. Those learning experiences have helped shape me into the agile designer I am today.</p><p>You're here because you're in the market for a fresh pair of eyes to help push your business or product into the future. We can do that together. Have a look at some of my projects, then contact me via email or telephone (I'm old enough to not be afraid of a phone call).</p></div>
         <a className="text-link" href="/about">My experience &amp; approach <span aria-hidden="true">↗</span></a>
       </div>
-      <div className="hero-photo"><img src="https://images.unsplash.com/photo-1682839487854-ef6f8a088eeb?auto=format&fit=crop&w=1600&q=85" alt="Lush green coastal forest meeting the blue Pacific Ocean" loading="lazy"/><div className="image-caption"><span>Natural designs</span><span>With Nature in mind</span></div></div>
+      <div className="landing-shore"><img src="/portfolio/shore.jpg" alt="Rob standing beside a quiet shore, with a weathered rowing boat in the foreground" width="576" height="576" loading="lazy"/></div>
     </section>
   </main>;
 }
