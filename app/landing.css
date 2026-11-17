@@ -1,0 +1,30 @@
+.landing-hero { padding: 56px 6% 64px; text-align: center; }
+.landing-portrait { display: block; width: 144px; height: 144px; margin: 0 auto 30px; border-radius: 50%; object-fit: cover; object-position: 50% 35%; border: 4px solid #fff; box-shadow: 0 0 0 1px #b8c9bc; }
+.landing-hero h1 { margin: 0 auto 28px; max-width: 1000px; }
+.landing-introduction { max-width: 780px; margin: 0 auto; font-size: clamp(17px, 1.6vw, 20px); line-height: 1.75; color: #52665d; }
+.landing-refresh .portfolio-progress { text-align: center; border-top: 1px solid var(--border); background: #e8eee4; }
+.landing-refresh .portfolio-progress h2, .landing-refresh .portfolio-progress p { margin-left: auto; margin-right: auto; }
+.landing-studies > h2 { margin: 16px 0 48px; }
+.landing-study-stack { display: grid; gap: 56px; }
+.landing-study { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(28px, 5vw, 80px); align-items: center; border-top: 1px solid var(--border); padding-top: 48px; }
+.landing-study h3 { font-size: clamp(32px, 3.5vw, 50px); font-weight: 400; line-height: 1.15; margin: 18px 0; }
+.landing-study h4 { font-size: 21px; line-height: 1.4; font-weight: 500; margin: 0 0 16px; }
+.landing-study-copy > p:not(.eyebrow) { color: #52665d; font-size: 17px; line-height: 1.75; margin-bottom: 24px; }
+.landing-study-image { display: block; overflow: hidden; background: #e0e9df; border-radius: 4px; }
+.landing-study-image img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.landing-study:nth-child(2) .landing-study-image img { object-fit: contain; background: #102e30; }
+.landing-about { display: grid; grid-template-columns: 1.1fr 1fr; gap: 6%; background: #e8eee4; align-items: stretch; }
+.landing-about h2 { margin-bottom: 28px; }
+.landing-about .intro { max-width: none; }
+.landing-about .intro p { margin: 0 0 24px; }
+.landing-about .hero-photo { min-height: 480px; }
+.landing-refresh a:focus-visible { outline: 3px solid #286a56; outline-offset: 6px; }
+@media (max-width: 700px) {
+  .landing-hero { padding: 36px 6% 44px; }
+  .landing-portrait { width: 116px; height: 116px; margin-bottom: 26px; }
+  .landing-hero h1 { font-size: clamp(36px, 9vw, 49px); letter-spacing: -1.5px; }
+  .landing-study, .landing-about { grid-template-columns: 1fr; gap: 28px; }
+  .landing-study { padding-top: 32px; }
+  .landing-study-stack { gap: 40px; }
+  .landing-about .hero-photo { min-height: 360px; }
+}
