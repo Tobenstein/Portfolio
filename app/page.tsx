@@ -24,16 +24,16 @@ export default function Home() {
       <p className="eyebrow">SELECTED WORK</p>
       <h2 id="case-studies-heading">Case studies</h2>
       <div className="landing-study-stack">{caseStudies.map((project) =>
-        <article className="landing-study" key={project.name}>
+        <a className="landing-study" key={project.name} href={project.href} aria-label={`Read the ${project.name} case study`}>
           <div className="landing-study-copy">
             <p className="eyebrow">{project.category}</p>
             <h3>{project.name}</h3>
             <h4>{project.title}</h4>
             <p>{project.description}</p>
-            <a className="text-link" href={project.href} aria-label={`Read the ${project.name} case study`}>Read the case study <span aria-hidden="true">↗</span></a>
+            <span className="text-link">Read the case study <span aria-hidden="true">↗</span></span>
           </div>
-          <a className="landing-study-image" href={project.href} aria-label={`Explore ${project.name}`}><img src={project.image} alt={project.alt} loading="lazy" /></a>
-        </article>
+          <div className="landing-study-image"><img src={project.image} alt={project.alt} loading="lazy" /></div>
+        </a>
       )}</div>
     </section>
     <section className="section landing-about" aria-labelledby="landing-about-heading">
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="intro home-intro"><p>I'm Rob, a Senior UX Designer and Researcher with a decade of experience. I've worked with organisations in Ireland, Spain, Czechia, South Korea, Japan, and Canada to create intuitive, accessible, and <em>critical</em> systems for millions of users.</p><p>My portfolio isn't a gallery of pretty UI designs - it's a record of systems and experiences I've helped build. Some of them turned out to be better learning experiences than finished products, but there is no growth without failure. Those learning experiences have helped shape me into the agile designer I am today.</p><p>You're here because you're in the market for a fresh pair of eyes to help push your business or product into the future. We can do that together. Have a look at some of my projects, then contact me via email or telephone (I'm old enough to not be afraid of a phone call).</p></div>
         <a className="text-link" href="/about">My experience &amp; approach <span aria-hidden="true">↗</span></a>
       </div>
-      <div className="landing-shore"><img src="/portfolio/shore.jpg" alt="Rob standing beside a quiet shore, with a weathered rowing boat in the foreground" width="576" height="576" loading="lazy"/></div>
+      <figure className="landing-shore"><img src="/portfolio/shore.jpg" alt="Rob standing beside a quiet shore, with a weathered rowing boat in the foreground" width="576" height="576" loading="lazy"/><figcaption>Kespukwitk, Mi'kma'ki. Photo credit: Hilary Perry</figcaption></figure>
     </section>
   </main>;
 }
