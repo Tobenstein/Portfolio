@@ -3,7 +3,7 @@ import './landing.css';
 import Image from 'next/image';
 
 const caseStudies = [
-  { name: 'Dalhousie', category: 'Medical education', title: 'Designing Trauma-Informed Medical Education at Scale', description: 'Turning sensitive clinical knowledge into a repeatable system built around consent, clarity and patient agency.', image: '/portfolio/dal-clinical-setup.jpg', alt: 'Clinical teaching setup at Dalhousie University', href: '/case-studies/curriculum-design' },
+  { name: 'Dalhousie University', category: 'Medical education', title: 'Designing Trauma-Informed Medical Education at Scale', description: 'Turning sensitive clinical knowledge into a repeatable system built around consent, clarity and patient agency.', image: '/portfolio/dal-clinical-setup.jpg', alt: 'Clinical teaching setup at Dalhousie University', href: '/case-studies/curriculum-design' },
   { name: 'WCF', category: 'Game design', title: 'Designing for the Rematch', description: 'A mobile wrestling trading card game designed around familiar systems, short-session battles and long-term engagement.', image: '/portfolio/wcf-battle-preview.jpg', alt: 'WCF wrestling card game battle prototype', href: '/case-studies/wcf' },
   { name: 'Tobytube', category: 'Personal project · Film systems', title: 'Feeding Passion with Spite', description: 'A streaming platform that catalogues thousands of films, turning a love of cinema into a world of discovery.', image: '/portfolio/tt-crowells-reimagined.webp', alt: 'Tobytube imagined as an after-dark video shop', href: '/case-studies/tobytube' },
 ];
